@@ -1,0 +1,313 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #b3b3b3;
+}
+.img
+{
+    background-image: url(logo1.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+}
+
+  .parent2 {
+    top:5px;
+    left:5px;
+    position:fixed;
+   display:block;
+    width:7%;
+    height:10%;
+    background-color:transparent;
+    border-radius:50%;
+    z-index: 99999;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  }
+  .test1 {
+    position:absolute;
+    text-align:center;
+    top:25%;
+    left:25%;
+    z-index:19;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+      position:absolute;
+  }
+  .test2 {
+    position:absolute;
+    color:white;
+    text-align:center;
+    top:25%;
+    left:25%;
+    z-index:19;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
+  }
+  .test3 {
+    position:absolute;
+    text-align:center;
+    top:25%;
+    left:25%;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;  
+  }
+    .test4 {
+    position:absolute;
+    text-align:center;
+    top:25%;
+    left:25%;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .6s;  
+  }
+  .mask2 {
+    left:5px;
+     width:7%;
+    height:10%;
+    background:rgba(102, 0, 0,0.8);
+    border-radius:50%;
+    position:absolute;
+    z-index:21;
+    text-align:center;
+    cursor:pointer;
+    position:fixed;
+  }
+  .mask2 .fas {
+    color: rgb(242, 242, 242);
+    font-size: 45px;
+    top: -20%;
+    background: none;
+    margin-top:10px;
+    opacity: 1;
+}
+  a .fas , .far{
+      color: rgb(242, 242, 242);
+      font-size: 25px;
+      top: -20%;
+      background: none;
+      text-shadow:-10px 3px 4px rgb(102, 0, 0);
+  }
+  @media only screen  and (min-width: 1025px){
+  #wrapper{
+    display: none;
+  }}
+  @media only screen  and (max-width: 1024px){
+.parent2{
+  display: none;
+}
+
+#wrapper{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+  top: 0;
+  z-index: 99999;
+}
+label{
+  cursor: pointer;
+    outline: none;
+    position: fixed;
+  }
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background:rgba(102, 0, 0,0.8);
+  width: 240px;
+  height: 100%;
+  transform: translate3d(-240px, 0, 0);
+  transition: transform 0.35s;
+  
+} 
+  label.menu-toggle {
+    position: absolute   ; 
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    line-height: 0px  ;  
+    display: block;
+    padding: 0;
+    color: rgb(242, 242, 242);
+    background:rgba(102, 0, 0,0.8);
+   text-align: center;
+     } 
+     label.menu-toggle .fas{
+      color: rgb(242, 242, 242);
+      font-size: 20px;
+      background: none;
+      margin-top:10px;
+     }
+     .menu-item .menu-link{
+       list-style-type: none;
+     }
+  .menu-item .menu-link a
+    {
+        display: block;
+        line-height: 100px;
+        padding: 0 20px;
+        font-size: 25px;
+        text-decoration: none;
+        color: rgb(242, 242, 242);
+        font-family: 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        }
+/* hide inputs */          
+.menu-checkbox{
+  display: none
+}
+/* fade in checked menu */    
+.menu-checkbox:checked + .menu{
+  transform: translate3d(0, 0, 0)
+
+}
+  }
+.fsec{
+  width: 100%;
+  height: auto;
+  margin-bottom:2.5%;
+  margin-top: 2.5%;
+  cursor: pointer;
+}
+.fsec .container .row .simg img
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+}
+/* 
+.fsec .container .row .simg  :hover{
+  box-shadow: 3px 3px 5px 5px rgba(102,0,0,1);
+} */
+.fsec .container .row .text{
+  text-align: justify;
+  padding: 10px;
+  border-radius: 3%;
+}
+.fsec .container .row .text h2 {
+  text-align: center;
+  color: #660000;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+.fsec .container .row .text hr{
+  padding-bottom:3px ;
+  background-color: #660000;
+  width: 30%;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  display: none;
+}
+
+.fsec .container .row .text  :hover + hr{
+ display: block;
+
+}
+.fsec .container .row .text p {
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+  color: #330000;
+}
+
+@media only screen  and (max-width: 1024px){
+  .fsec{
+    width: 100%;
+    height: auto;
+    margin-bottom:5%;
+    margin-top:-5%;
+  }
+}
+@media only screen  and (max-width: 768px){
+  .fsec{
+    width: 100%;
+    height: auto;
+    margin-bottom:25%;
+    margin-top:-20%;
+  }
+}
+@media only screen  and (max-width: 540px){
+  .fsec{
+    width: 100%;
+    height: auto;
+    margin-bottom:55%;
+    margin-top:-50%;
+  }
+}
+@media only screen  and (max-width: 414px){
+  .fsec{
+    width: 100%;
+    height: auto;
+    margin-bottom:85%;
+    margin-top:-80%;
+  }
+}
+@media only screen  and (max-width:320px){
+  .fsec{
+    width: 100%;
+    height: auto;
+    margin-bottom:115%;
+    margin-top:-110%;
+  }
+}
+
+  .foot {
+    background-image: url(footer.jpg);
+    width: 100%;
+    background-size: cover;
+    background-size: 100%;
+    height: auto;
+  }
+.foot .fdiv{
+  color: rgb(255, 230, 230);
+  padding-top: 3.5%;
+ 
+}
+.foot .fdiv  h4{
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size:30px ;
+}
+.foot .fdiv p {
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+}
+.foot .fdiv p a{
+  text-transform: capitalize;
+  color:rgb(255, 230, 230) ;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+.foot .fdiv hr{
+  background-color: rgb(255, 230, 230);
+  width: 25%;
+}
+.foot .fdiv a .fab{
+font-size: 35px;
+color: rgb(255, 230, 230);;
+}
+#copyr{
+  font-size: 11px;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+
+/* make scroll effect to page  */
+.inline{
+  box-shadow: 1em 1em 2em .25em rgba(102, 0, 0, .2);
+  opacity: 0;
+  margin: .5em auto;
+  transform: translateY(4em) ;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1);
+  opacity :.3s ,.25s, ease-out;
+  max-width: 600px;
+  width: 90%;
+  will-change: transform, opacity;
+}
+
+.inline.is-visible {
+  opacity: 1;
+  transform: rotateZ(0deg);
+}
